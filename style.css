@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,700;1,9..144,700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  background-color: #F2EAE2;
+  font: 14px "Montserrat", sans-serif;
+  color: #6C7289;
+  line-height: 1.8;
+}
+
+a, a:visited, a:hover {
+  text-decoration: none;
+}
+
+.display {
+  font: bold 32px "Fraunces", display;
+  color: #1C232B;
+  line-height: 1;
+}
+
+.btn {
+  background-color: #3D8168;
+  font: bold 14px "Montserrat", sans-serif;
+  color: white;
+  border-radius: 8px;
+  padding: 15px;
+  text-align: center;
+  margin-top: 20px;
+}
+.btn:hover {
+  background-color: #1A4032;
+  transition: background-color 600ms ease-in-out;
+}
+.btn img {
+  margin-right: 11px;
+}
+
+.overline {
+  font: 500 12px "Montserrat", sans-serif;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  line-height: 1;
+}
+
+h1 {
+  margin-bottom: 16px;
+}
+
+.product-description {
+  margin-bottom: 24px;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  line-height: 1;
+}
+.price .new {
+  font: bold 32px "Fraunces", display;
+  color: #3D8168;
+}
+.price .old {
+  margin-left: 19px;
+}
+
+.add-to-cart {
+  display: block;
+  margin-bottom: 24px;
+}
+
+.card {
+  margin: 28px auto;
+  width: 343px;
+  max-width: 100%;
+  border-radius: 10px;
+  background-color: white;
+}
+.card img {
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.product-info {
+  padding: 24px;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.attribution a {
+  color: #6C7289;
+}
+
+@media screen and (min-width: 768px) {
+  .card {
+    width: 600px;
+    height: 450px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+  }
+  .card .product-img img {
+    border-radius: 10px 0 0 10px;
+    width: 450px;
+  }
+  .product-img {
+    padding: 0;
+    margin: 0;
+  }
+  picture {
+    margin: 0;
+    padding: 0;
+  }
+}/*# sourceMappingURL=style.css.map */
